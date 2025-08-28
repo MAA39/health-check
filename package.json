@@ -1,0 +1,24 @@
+{
+  "name": "health-check",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ヘルスチェック - React Native + watchOS ヘルスケア連携アプリ",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:ios": "pnpm --filter ./apps/mobile run ios",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "clean": "turbo run clean"
+  },
+  "devDependencies": {
+    "turbo": "^1.13.4"
+  },
+  "packageManager": "pnpm@8.15.6",
+  "engines": {
+    "node": ">=18"
+  }
+}
